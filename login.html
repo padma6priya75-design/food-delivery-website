@@ -1,0 +1,42 @@
+<html>
+<head><title>login</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+            .navbar{
+            display: flex;
+               justify-content: flex-end;
+            gap: 25px;
+            background-color: black;
+            
+        }
+    </style>
+</head>
+<body  style="background-image: url('https://t3.ftcdn.net/jpg/02/21/40/16/360_F_221401603_6urJw6Di9KjlgcPgLfkdVLHtc5Q21aCx.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center; min-height: 100vh;">
+     <header>
+        <p>🍝Bristo Bliss</p>
+        <nav class="navbar">
+            <a href="home.html">HOME</a>
+            <a href="login.html">LOGIN</a>
+            <a href="register.html">SIGNUP</a>
+           
+        </nav>
+    </header>
+    
+<center>
+    <a href="register.html">create an account</a>
+<h1>LOGIN</h1>
+<form onsubmit="return validateform()" action="http://localhost:3000/login" method="POST">
+  email:<input type="email" name="email" style="width: 250px; height: 30px; background-color: black; color: white; font-size: 18px;">
+ 
+  <br>
+  <br>
+  password:<input type="password" name="password" style="width: 250px; height: 30px; background-color: black; color: white; font-size: 18px;">
+ <br>
+ <br>
+  <button type="submit"> SUBMIT</button>
+</form>
+</center>
+<p id="result"> </p>
+<script src="server.js"></script>
+</body>
+</html>  

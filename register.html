@@ -1,0 +1,45 @@
+<html>
+<head><title>SIGNUP</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .navbar{
+            display: flex;
+               justify-content: flex-end;
+            gap: 25px;
+            background-color: black;
+            padding:20px;
+    }
+        
+  </style>
+</head>
+<body style="background-image: url('https://t3.ftcdn.net/jpg/02/21/40/16/360_F_221401603_6urJw6Di9KjlgcPgLfkdVLHtc5Q21aCx.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center; min-height: 100vh;">
+   <header>
+        <p>🍝Bristo Bliss</p>
+        <nav class="navbar">
+            <a href="home.html">HOME</a>
+            <a href="login.html">LOGIN</a>
+            <a href="register.html">SIGNUP</a>
+            
+        </nav>
+    </header>
+<center>
+  <a href="login.html">Already registered? login</a>
+<h1>SIGNUP</h1>
+<h3>signup to continue</h3>
+<form onsubmit="return validateform()"  action="http://localhost:3000/signup" method="POST">
+  name:<input type="text" name="name" required style="width: 250px; height: 30px; background-color: black; color: white; font-size: 18px;">
+  <br>
+  <br>
+  email:<input type="email" name="email"required style="width: 250px; height: 30px; background-color: black; color: white; font-size: 18px;">
+  <br>
+  <br>
+  password:<input type="password" name="password" required style="width: 250px; height: 30px; background-color: black; color: white; font-size: 18px;">
+ <br>
+ <br>
+  <button type="submit"> SUBMIT</button>
+</form>
+</center>
+
+<script src="server.js"></script>
+</body>
+</html>  
